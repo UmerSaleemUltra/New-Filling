@@ -18,3 +18,63 @@
 .sidebar-open {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
+.hero-background{
+background-color: white;
+}
+
+.pricing-card {
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    background-color: #f7fafd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #f59e0b; /* Tailwind Yellow-500 */
+    color: white;
+}
+
+.pricing-card:hover .pricing-content {
+    opacity: 0;
+}
+
+.pricing-card:hover .pricing-hover-content {
+    opacity: 1;
+}
+
+.pricing-content,
+.pricing-hover-content {
+    transition: opacity 0.3s ease;
+}
+
+.pricing-hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.icon-link {
+  color: #f59e0b; /* Tailwind Yellow-500 */
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    background-color: #f59e0b; /* Tailwind Yellow-500 */
+}
+
+.pricing-image {
+    height: 150px;
+    margin-bottom: 1rem;
+}
