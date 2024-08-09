@@ -11,3 +11,4 @@ closeSidebar.addEventListener('click', () => {
     sidebar.classList.remove('sidebar-active');
     sidebar.classList.remove('sidebar-open');
 });
+
